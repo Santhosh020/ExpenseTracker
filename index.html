@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator Signin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <h1>EXPENSE CALCULATOR</h1>
+    <div class="radio-inputs">
+        <label class="radio">
+          <input type="radio" name="radio" id="signIn" checked="">
+          <span class="name">SIGN IN</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio" id="signUp">
+          <a href="signup.html">
+            <span class="name">SIGN UP</span>
+          </a>
+        </label>
+    </div>
+      
+    <form action="validate.php" method="post">
+        <div class="login">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            
+            <button class="cta" type="submit" name="login">
+                <span class="hover-underline-animation"> LOGIN </span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </button>
+              
+        </div>
+    </form>  
+
+</body>
+</html>
