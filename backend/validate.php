@@ -3,18 +3,16 @@
  $conn = "";
   
  try {
-     $servername = "localhost:3306";
-     $dbname = "sanjithr";
-     $username = "sanjithr";
-     $password = "2004";
-   
-     $conn = new PDO(
-         "mysql:host=$servername; dbname=sanjithr",
-         $username, $password
-     );
-      
-    $conn->setAttribute(PDO::ATTR_ERRMODE,
-                     PDO::ERRMODE_EXCEPTION);
+    $servername = "127.0.0.1";
+$username = "expense_user";
+$password = "ExpensePass123!";
+$dbname = "expense_db";
+
+$conn = new PDO("mysql:host=$servername;port=3307;dbname=$dbname;charset=utf8mb4",
+                $username,
+                $password);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
  }
  catch(PDOException $e) {
      echo "Connection failed: " . $e->getMessage();
